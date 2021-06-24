@@ -26,5 +26,8 @@ public class Registrasi extends AppCompatActivity {
                 startActivity(new Intent(Registrasi.this, Login.class));
             }
         });
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
 }

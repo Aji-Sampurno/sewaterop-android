@@ -28,4 +28,9 @@ public class Login extends AppCompatActivity {
                 startActivity(new Intent(Login.this, Registrasi.class));
             }
         });
-}}
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+    }
+}

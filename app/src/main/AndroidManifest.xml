@@ -11,8 +11,8 @@
         android:theme="@style/Theme.SewaTerop">
         <activity android:name=".SewaBaru"></activity>
         <activity android:name=".Riwayat" />
-        <activity android:name=".Beranda" />
-        <activity android:name=".Login">
+        <activity android:name=".Login" />
+        <activity android:name=".Beranda">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
