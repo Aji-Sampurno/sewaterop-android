@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BerandaFragment">
+    tools:context=".SewaBaru">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_weight="4"
-        android:background="@color/base"
+        android:background="@android:color/holo_orange_dark"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,12 +20,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:srcCompat="@drawable/icons8_multiply_24"
+            tools:ignore="VectorDrawableCompat" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="3"
-            android:text="Beranda"
+            android:text="sewa baru"
             android:textColor="@color/white"
             android:textSize="30dp" />
 
@@ -36,7 +46,7 @@
             android:layout_margin="5dp"
             android:background="@android:color/transparent"
             android:padding="10dp"
-            app:srcCompat="@drawable/icons8_search_24"
+            app:srcCompat="@drawable/icons8_checkmark_24"
             tools:ignore="VectorDrawableCompat" />
 
     </LinearLayout>
@@ -45,35 +55,31 @@
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="200dp"
         android:layout_weight="4"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerviewTemp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp" />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Tanggal Mulai" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Tanggal Selesai" />
 
     </LinearLayout>
-    <Button
-        android:id="@+id/btnsewabaru"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="254dp"
-        android:layout_marginEnd="15dp"
-        android:backgroundTint="@color/base"
-        android:drawableLeft="@drawable/icons8_plus_math_26"
-        android:text="SEWA BARU"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.87" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

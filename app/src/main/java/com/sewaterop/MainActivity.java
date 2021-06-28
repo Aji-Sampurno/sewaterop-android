@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         tab_layout.getTabAt(2).setIcon(R.drawable.icons8_user_48);
 
         // set icon color pre-selected
-        tab_layout.getTabAt(0).getIcon().setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_IN);
-        tab_layout.getTabAt(1).getIcon().setColorFilter(getResources().getColor(R.color.base), PorterDuff.Mode.SRC_IN);
-        tab_layout.getTabAt(2).getIcon().setColorFilter(getResources().getColor(R.color.base), PorterDuff.Mode.SRC_IN);
+        tab_layout.getTabAt(0).getIcon().setColorFilter(getResources().getColor(R.color.base), PorterDuff.Mode.SRC_IN);
+        tab_layout.getTabAt(1).getIcon().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_IN);
+        tab_layout.getTabAt(2).getIcon().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_IN);
 
         tab_layout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

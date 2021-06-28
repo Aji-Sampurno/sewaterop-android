@@ -6,7 +6,7 @@
             <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
                 <shape android:shape="rectangle">
                     <corners android:radius="20dp" />
-                    <solid android:color="#FF8800" />
+                    <solid android:color="@color/base" />
                     <padding android:padding="8dp" />
                     <size android:width="150dp" android:height="40dp" />
                 </shape>
@@ -20,7 +20,7 @@
             <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
                 <shape android:shape="rectangle">
                     <corners android:radius="20dp" />
-                    <solid android:color="@android:color/holo_orange_dark" />
+                    <solid android:color="@color/base" />
                     <padding android:padding="8dp" />
                     <size android:width="150dp" android:height="40dp" />
                 </shape>
@@ -30,12 +30,11 @@
     </item>
 
     <item>
-
         <layer-list>
             <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
                 <shape android:shape="rectangle">
                     <corners android:radius="20dp" />
-                    <solid android:color="@android:color/holo_orange_dark" />
+                    <solid android:color="@color/base" />
                     <padding android:padding="8dp" />
                     <size android:width="150dp" android:height="40dp" />
                 </shape>

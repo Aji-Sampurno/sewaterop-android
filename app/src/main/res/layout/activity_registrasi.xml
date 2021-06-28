@@ -13,30 +13,32 @@
     android:gravity="center_horizontal"
     tools:context=".Registrasi">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitStart"
-        android:layout_margin="10dp"
-        app:srcCompat="@drawable/sewaterop_logo" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BUAT AKUN"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:textSize="20sp" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_height="match_parent"
         android:layout_marginBottom="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/sewaterop_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUAT AKUN"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inpt_nama"
@@ -119,20 +121,22 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buat Akun"
+                android:layout_margin="10dp"
+                style="@style/Widget.AppCompat.Button.Colored" />
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun ? Login"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"/>
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Buat Akun"
-        android:layout_margin="10dp"
-        style="@style/Widget.AppCompat.Button.Colored" />
-    <TextView
-        android:id="@+id/tvRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sudah Punya Akun ? Login"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
 </LinearLayout>
