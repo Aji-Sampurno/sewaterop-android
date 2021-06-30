@@ -22,4 +22,5 @@
         android:name="com.example.sewaterop.ui.user.UserFragment"
         android:label="@string/title_User"
         tools:layout="@layout/fragment_user" />
+
 </navigation>
