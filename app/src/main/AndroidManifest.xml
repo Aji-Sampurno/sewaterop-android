@@ -8,23 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication1">
-        <activity
-            android:name="com.example.sewaterop.SplashScreen"
-            android:label="@string/title_activity_splash_screen">
+        android:theme="@style/Theme.SewaTerop">
+        <activity android:name="com.example.sewaterop.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.sewaterop.RegistrasiActivity"
-            android:label="@string/title_activity_registrasi"></activity>
+        <activity android:name="com.example.sewaterop.RegistrasiActivity"></activity>
         <activity android:name="com.example.sewaterop.LoginActivity"></activity>
-        <activity
-            android:name="com.example.sewaterop.MainActivity"
-            android:label="@string/app_name"></activity>
+        <activity android:name="com.example.sewaterop.MainActivity"></activity>
     </application>
 
 </manifest>
