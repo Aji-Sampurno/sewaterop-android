@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_beranda">
+
+    <fragment
+        android:id="@+id/navigation_beranda"
+        android:name="com.example.sewaterop.ui.beranda.BerandaFragment"
+        android:label="@string/title_beranda"
+        tools:layout="@layout/fragment_beranda" />
+
+    <fragment
+        android:id="@+id/navigation_riwayat"
+        android:name="com.example.sewaterop.ui.riwayat.RiwayatFragment"
+        android:label="@string/title_Riwayat"
+        tools:layout="@layout/fragment_riwayat" />
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.example.sewaterop.ui.user.UserFragment"
+        android:label="@string/title_User"
+        tools:layout="@layout/fragment_user" />
+</navigation>

@@ -1,4 +1,4 @@
-package com.sewaterop;
+package com.example.sewaterop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import static android.text.Html.fromHtml;
 
-public class Registrasi extends AppCompatActivity {
+public class RegistrasiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class Registrasi extends AppCompatActivity {
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Registrasi.this, Login.class));
+                startActivity(new Intent(RegistrasiActivity.this, LoginActivity.class));
             }
         });
         if (getSupportActionBar() != null) {

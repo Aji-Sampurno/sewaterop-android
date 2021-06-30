@@ -1,4 +1,4 @@
-package com.sewaterop;
+package com.example.sewaterop;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +13,7 @@ import android.widget.Toast;
 
 import static android.text.Html.fromHtml;
 
-public class Login extends AppCompatActivity {
-
+public class LoginActivity extends AppCompatActivity {
     EditText username, password;
     Button btnLogin;
 
@@ -24,9 +23,9 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        btnLogin = (Button)findViewById(R.id.btnlogin);
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        btnLogin = findViewById(R.id.btnlogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,12 +37,12 @@ public class Login extends AppCompatActivity {
                 if (usernameKey.equals("admin") && passwordKey.equals("123")){
                     //jika login berhasil
                     Toast.makeText(getApplicationContext(), "LOGIN SUKSES", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Login.this, MainActivity.class);
-                    Login.this.startActivity(intent);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    LoginActivity.this.startActivity(intent);
                     finish();
                 }else {
                     //jika login gagal
-                    AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                     builder.setMessage("Username atau Password Anda salah!")
                             .setNegativeButton("Retry", null).create().show();
                 }
@@ -57,9 +56,10 @@ public class Login extends AppCompatActivity {
         tvCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, Registrasi.class));
+                startActivity(new Intent(LoginActivity.this, RegistrasiActivity.class));
             }
         });
+
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
