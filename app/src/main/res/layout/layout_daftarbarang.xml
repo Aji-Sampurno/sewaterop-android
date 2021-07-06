@@ -10,29 +10,38 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
             android:layout_centerInParent="true">
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/namabarang"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="nama pemesan"
+                android:layout_weight="1"
+                android:text="nama barang"
                 android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:textSize="20sp"
-                android:id="@+id/username"/>
-            <TextView
-                android:layout_width="match_parent"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/batal"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Berakhir pada 26-7-2021"
-                android:layout_below="@+id/username"
-                android:id="@+id/tanggalberakhir"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="4 Barang"
-                android:layout_below="@id/tanggalberakhir"
-                android:id="@+id/barang"/>
-        </RelativeLayout>
+                android:background="@color/transparan"
+                android:text="batal"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

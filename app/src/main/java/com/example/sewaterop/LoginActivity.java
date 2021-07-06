@@ -14,9 +14,9 @@ import android.widget.Toast;
 import static android.text.Html.fromHtml;
 
 public class LoginActivity extends AppCompatActivity {
+
     EditText username, password;
     Button btnLogin;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         btnLogin = findViewById(R.id.btnlogin);
 
+        //untuk mengatur button login
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +52,9 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         TextView tvCreateAccount = (TextView)findViewById(R.id.tvCreateAccount);
+        TextView tvForgetPassword = (TextView)findViewById(R.id.tvforgetpass);
 
+        //untuk mengatur butoon daftar (menuju halaman registrasi)
         tvCreateAccount.setText(fromHtml("Belum Punya Akun ? " + "</font><font color='#3b5998'>Daftar Sekarang</font>"));
         tvCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +63,16 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //untuk mengatur button text lupa password (menuju halaman lupa password)
+        tvForgetPassword.setText(fromHtml(""+"</font><font color='#3b5998'>Lupa Password</font>"));
+        tvForgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,ForgetPassActivity.class));
+            }
+        });
 
+        //untuk menghilangkan action bar
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }

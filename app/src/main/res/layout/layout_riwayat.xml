@@ -33,6 +33,17 @@
                 android:text="4 Barang"
                 android:layout_below="@id/tanggalberakhir"
                 android:id="@+id/barang"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/barang"
+                android:layout_alignBottom="@+id/username"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginBottom="0dp"
+                android:text="Lunas" />
         </RelativeLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

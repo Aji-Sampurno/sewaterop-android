@@ -9,16 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SewaTerop">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".sewaan.BarangSewa"></activity>
+        <activity
+            android:name=".SewaBaruActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ForgetPassActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".RegistrasiActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistrasiActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

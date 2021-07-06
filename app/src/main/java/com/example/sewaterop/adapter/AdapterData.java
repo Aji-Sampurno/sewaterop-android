@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.sewaterop.SewaBaru;
+import com.example.sewaterop.SewaBaruActivity;
 import com.example.sewaterop.model.ModelData;
 import com.example.sewaterop.R;
 
@@ -59,14 +59,13 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData>{
             super(view);
 
             tvusername = (TextView) view.findViewById(R.id.username);
-            tvgrup = (TextView) view.findViewById(R.id.grup);
-            tvnama = (TextView) view.findViewById(R.id.nama);
+            tvnama = (TextView) view.findViewById(R.id.namalengkap);
             tvpassword = (TextView) view.findViewById(R.id.password);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent update = new Intent(context, SewaBaru.class);
+                    Intent update = new Intent(context, SewaBaruActivity.class);
                     update.putExtra("update",1);
                     update.putExtra("username",md.getUsername());
                     update.putExtra("grup",md.getGrup());

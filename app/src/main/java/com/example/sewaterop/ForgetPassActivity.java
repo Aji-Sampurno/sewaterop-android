@@ -9,21 +9,21 @@ import android.widget.TextView;
 
 import static android.text.Html.fromHtml;
 
-public class RegistrasiActivity extends AppCompatActivity {
+public class ForgetPassActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrasi);
+        setContentView(R.layout.activity_forget_pass);
 
         TextView tvRegister = (TextView)findViewById(R.id.tvLogin);
 
-        tvRegister.setText(fromHtml("Sudah Punya Akun ? " + "</font><font color='#3b5998'>Login</font>"));
+        tvRegister.setText(fromHtml("Ingat Password ? " + "</font><font color='#3b5998'>Login</font>"));
 
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegistrasiActivity.this, LoginActivity.class));
+                startActivity(new Intent(ForgetPassActivity.this, LoginActivity.class));
             }
         });
         if (getSupportActionBar() != null) {

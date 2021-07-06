@@ -20,9 +20,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/recyclerviewTemp"
-            android:layout_margin="5dp"/>
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/layout_row"/>
 
         <TextView
             android:id="@+id/text_home"

@@ -18,18 +18,16 @@ public class RiwayatFragment extends Fragment {
 
     private RiwayatViewModel riwayatViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        riwayatViewModel =
-                new ViewModelProvider(this).get(RiwayatViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        riwayatViewModel = new ViewModelProvider(this).get(RiwayatViewModel.class);
         View root = inflater.inflate(R.layout.fragment_riwayat, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        riwayatViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        //final TextView textView = root.findViewById(R.id.text_dashboard);
+        //riwayatViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            //@Override
+            //public void onChanged(@Nullable String s) {
+                //textView.setText(s);
+            //}
+        //});
         return root;
     }
 }
