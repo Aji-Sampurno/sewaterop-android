@@ -12,23 +12,27 @@
         android:orientation="vertical">
 
         <RadioGroup
+            android:id="@+id/radiogrup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/basic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textAlignment="textStart"
-                android:text="BASIC \nRp.3.000.000"/>
+                android:text="BASIC \nRp.3.000.000"/>/>
 
             <RadioButton
+                android:id="@+id/premium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:text="PREMIUM V2 \nRp.50.000.000"/>
 
             <RadioButton
+                android:id="@+id/medium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
