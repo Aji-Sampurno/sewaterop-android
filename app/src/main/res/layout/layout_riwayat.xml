@@ -17,33 +17,30 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="nama pemesan"
+                android:text="id pesanan"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:id="@+id/username"/>
+                android:id="@+id/idpesanan"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Berakhir pada 26-7-2021"
-                android:layout_below="@+id/username"
-                android:id="@+id/tanggalberakhir"/>
+                android:text="Berakhir pada"
+                android:layout_below="@+id/idpesanan"
+                android:id="@+id/mulai"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4 Barang"
-                android:layout_below="@id/tanggalberakhir"
-                android:id="@+id/barang"/>
+                android:text="dimuali pada"
+                android:layout_below="@id/mulai"
+                android:id="@+id/berakhir"/>
 
             <TextView
                 android:id="@+id/status"
-                android:layout_width="119dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/barang"
-                android:layout_alignBottom="@+id/username"
-                android:layout_marginLeft="330dp"
-                android:layout_marginTop="-65dp"
-                android:layout_marginBottom="0dp"
-                android:text="Lunas" />
+                android:layout_below="@id/berakhir"
+                android:text="Lunas"
+                android:textStyle="bold"/>
         </RelativeLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

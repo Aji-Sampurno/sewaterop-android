@@ -20,19 +20,19 @@
                 android:text="nama pemesan"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:id="@+id/username"/>
+                android:id="@+id/idpesanan"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dimulai pada 26-7-2021"
+                android:layout_below="@+id/idpesanan"
+                android:id="@+id/tglmulai"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Berakhir pada 26-7-2021"
-                android:layout_below="@+id/username"
-                android:id="@+id/tanggalberakhir"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="4 Barang"
-                android:layout_below="@id/tanggalberakhir"
-                android:id="@+id/barang"/>
+                android:layout_below="@+id/tglmulai"
+                android:id="@+id/tglberakhir"/>
         </RelativeLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

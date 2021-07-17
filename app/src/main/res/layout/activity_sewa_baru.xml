@@ -215,33 +215,31 @@
                         android:layout_height="wrap_content">
 
                         <RadioButton
-                            android:id="@+id/paketsewa"
+                            android:id="@+id/basic"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Paket Sewa"/>
+                            android:layout_margin="5dp"
+                            android:textAlignment="textStart"
+                            android:text="BASIC \nRp.3.000.000"/>/>
 
                         <RadioButton
-                            android:id="@+id/daftarbarang"
+                            android:id="@+id/premium"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Daftar Barang"/>
+                            android:layout_margin="5dp"
+                            android:text="PREMIUM V2 \nRp.50.000.000"/>
+
+                        <RadioButton
+                            android:id="@+id/medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="MEDIUM \nRp.4.000.000"/>
 
                     </RadioGroup>
 
                 </LinearLayout>
             </LinearLayout>
-
-            <FrameLayout
-                android:id="@+id/frameLayout"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/parent3"
-                app:layout_constraintVertical_bias="0.0" />
 
             <Button
                 android:id="@+id/btn_buatpesanan"
