@@ -8,6 +8,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,7 @@ import java.util.Map;
 public class DetailSewaan extends AppCompatActivity {
 
     TextView idpesanan, namapemesan, namapaket, mulaipemesanan, akhirpemesanan, totalbiaya;
+    Button btnbayar;
     LinearLayout isipaketrow;
     ProgressDialog pd;
 
@@ -52,9 +54,19 @@ public class DetailSewaan extends AppCompatActivity {
         akhirpemesanan = (TextView) findViewById(R.id.tvakhirpemesanan);
         totalbiaya = (TextView) findViewById(R.id.tvtotalbiaya);
         isipaketrow = findViewById(R.id.isi_paket_row_sewa);
+        btnbayar = (Button) findViewById(R.id.bayar);
 
         pd = new ProgressDialog(DetailSewaan.this);
         loadJson(intent_idpesanan);
+
+        btnbayar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailSewaan.this, BayarSewaan.class);
+                DetailSewaan.this.startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
