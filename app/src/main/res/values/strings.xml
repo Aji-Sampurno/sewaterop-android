@@ -6,4 +6,9 @@
     <string name="title_activity_registrasi">Registrasi</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="title_activity_sewa_baru">Sewa Baru</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="daftarbarang">ini daftar Barang</string>
+    <string name="paketsewa">ini peket sewa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

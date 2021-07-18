@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.sewaterop"
+        applicationId "com.sewaterop"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
@@ -44,4 +44,5 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
 }

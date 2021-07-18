@@ -10,4 +10,6 @@
     <color name="Base">#FF8800</color>
     <color name="Base2">#FFBF00</color>
     <color name="Base3">#FF5100</color>
+    <color name="underline">#D8D6D6</color>
+    <color name="transparan">#00000000</color>
 </resources>
