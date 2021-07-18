@@ -33,6 +33,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import static android.text.Html.FROM_HTML_OPTION_USE_CSS_COLORS;
 import static android.text.Html.fromHtml;
 
 public class LoginActivity extends AppCompatActivity {
@@ -83,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
 //        TextView tvForgetPassword = (TextView)findViewById(R.id.tvforgetpass);
 
 //  untuk mengatur butoon daftar (menuju halaman registrasi)
-        tvCreateAccount.setText(fromHtml("Belum Punya Akun ? " + "</font><font color='#3b5998'>Daftar Sekarang</font>"));
+        tvCreateAccount.setText(fromHtml("Belum Punya Akun ? " + "</font><font color='#3b5998'>Daftar Sekarang</font>", FROM_HTML_OPTION_USE_CSS_COLORS));
         tvCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

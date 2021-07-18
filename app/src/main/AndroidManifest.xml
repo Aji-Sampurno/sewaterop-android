@@ -12,9 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SewaTerop">
-        <activity android:name=".BayarSewaan"></activity>
-        <activity android:name=".DetailSewaan" />
-        <activity android:name=".DetailRiwayat" />
+        <activity android:name=".BayarSewaan"
+            android:label="Pembayaran"/>
+        <activity android:name=".DetailSewaan"
+            android:label="Detail"/>
+        <activity android:name=".DetailRiwayat"
+            android:label="Detail"/>
         <activity
             android:name=".SewaBaruActivity"
             android:parentActivityName=".MainActivity" />

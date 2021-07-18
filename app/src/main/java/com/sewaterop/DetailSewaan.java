@@ -63,6 +63,15 @@ public class DetailSewaan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DetailSewaan.this, BayarSewaan.class);
+                intent.putExtra("id_pesanan", idpesanan.getText());
+                intent.putExtra("nama_pemesan", namapemesan.getText());
+                intent.putExtra("nama_paket", namapaket.getText());
+                intent.putExtra("mulai_pemesanan", mulaipemesanan.getText());
+                intent.putExtra("akhir_pemesanan", akhirpemesanan.getText());
+                intent.putExtra("total_biaya", totalbiaya.getText());
+                intent.putExtra("total_biaya_num", totalbiaya.getContentDescription());
+                intent.putExtra("id_paket", namapaket.getContentDescription());
+
                 DetailSewaan.this.startActivity(intent);
                 finish();
             }
@@ -91,6 +100,8 @@ public class DetailSewaan extends AppCompatActivity {
                             mulaipemesanan.setText(res.getString("tgl_mulai") + " " + res.getString("waktu_mulai"));
                             akhirpemesanan.setText(res.getString("tgl_selesai") + " " + res.getString("waktu_selesai"));
                             totalbiaya.setText(currency.formatRupiah(res.getString("harga")));
+                            totalbiaya.setContentDescription(res.getString("harga"));
+                            namapaket.setContentDescription(res.getString("id_paket"));
 
                             String isipaketstr = res.getString("barang_sewaan");
                             JSONObject isipaketobj = new JSONObject(isipaketstr);
