@@ -62,7 +62,7 @@
 
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/tvidpesanan"
+                    android:id="@+id/tvidpesananbayar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="..."
@@ -91,7 +91,7 @@
 
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/tvnamapemesan"
+                    android:id="@+id/tvnamapemesanbayar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="..."
@@ -120,7 +120,7 @@
 
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/tvnamapaket"
+                    android:id="@+id/tvnamapaketbayar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="..."
@@ -149,7 +149,7 @@
 
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/tvmulaipemesanan"
+                    android:id="@+id/tvmulaipemesananbayar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="..."
@@ -178,36 +178,7 @@
 
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/tvakhirpemesanan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="..."
-                    android:textColor="@color/black"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:text="Total Biaya"
-                    android:textColor="@color/black"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text=":"
-
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/tvtotalbiaya"
+                    android:id="@+id/tvakhirpemesananbayar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="..."
@@ -240,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/isi_paket_row_sewa">
+                    android:id="@+id/isi_paket_row_sewa_bayar">
 
                 </LinearLayout>
 
@@ -253,12 +224,133 @@
                 android:layout_marginBottom="10dp"
                 android:background="@android:color/darker_gray"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Hitung Biaya"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/darker_gray"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Biaya"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text=":"
+
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvtotalbiayabayar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kembalian"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text=":"
+
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvkembalian_rwbayar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Status Pembayaran"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text=":"
+
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvstatus_rwbayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah Bayar (Rp)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="* Sebelum mengklik Selesai pastikan konsumen sudah menyerahkan uang kepada anda."/>
+
             <Button
-                android:id="@+id/bayar"
+                android:id="@+id/selesai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn1"
-                android:text="Bayar"
+                android:text="Selesai"
                 android:textColor="@color/white"/>
 
         </LinearLayout>
