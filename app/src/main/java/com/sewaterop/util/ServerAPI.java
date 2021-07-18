@@ -5,7 +5,8 @@ public class ServerAPI {
     public static final String URL_DATA = BASE_URL + "/getlistsewaforuser?id_penyewa=";
     public static final String URL_RIWAYAT = BASE_URL + "/getlistsewahistory?id_penyewa=";
     public static final String URL_LOGIN = BASE_URL + "/login";
-    public static final String URL_INSERT = "http://192.168.0.5/A_E31190279_AJI-SAMPURNO_WEB/MINGGU_12/CI/Mahasiswa/ApiInsert";
-    public static final String URL_DELETE = "http://192.168.0.5/A_E31190279_AJI-SAMPURNO_WEB/MINGGU_12/CI/Mahasiswa/ApiDelete";
-    public static final String URL_UPDATE = "http://192.168.0.5/A_E31190279_AJI-SAMPURNO_WEB/MINGGU_12/CI/Mahasiswa/ApiUpdate";
+    public static final String URL_DETAILSEWA = BASE_URL + "/getdetailsewa?id_sewaan=";
+    public static final String URL_DETAILRIWAYAT = BASE_URL + "/detailhistory?id_sewaan=";
+    public static final String URL_ALLPAKET = BASE_URL + "/getlistpaket";
+    public static final String URL_CREATESEWA = BASE_URL + "/addsewa";
 }

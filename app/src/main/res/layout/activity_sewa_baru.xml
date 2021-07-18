@@ -84,7 +84,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="popTimePicker"
-                        android:text="00 : 00"
+                        android:text="00:00"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
                         android:textSize="15sp"
@@ -168,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:onClick="popTimePicker"
-                        android:text="00 : 00"
+                        android:text="00:00"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -202,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="Pilih Barang Dari :"
+                        android:text="Pilih Paket Sewa:"
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -214,27 +214,35 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <RadioButton
-                            android:id="@+id/basic"
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:textAlignment="textStart"
-                            android:text="BASIC \nRp.3.000.000"/>/>
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true" />
 
-                        <RadioButton
-                            android:id="@+id/premium"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:text="PREMIUM V2 \nRp.50.000.000"/>
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/basic"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="5dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:text="BASIC \nRp.3.000.000"/>/>-->
 
-                        <RadioButton
-                            android:id="@+id/medium"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:text="MEDIUM \nRp.4.000.000"/>
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/premium"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="5dp"-->
+<!--                            android:text="PREMIUM V2 \nRp.50.000.000"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/medium"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="5dp"-->
+<!--                            android:text="MEDIUM \nRp.4.000.000"/>-->
 
                     </RadioGroup>
 

@@ -65,7 +65,7 @@
                     android:id="@+id/tvidpesanan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID Pesanan"
+                    android:text="..."
                     android:textColor="@color/black"
                     />
 
@@ -94,7 +94,7 @@
                     android:id="@+id/tvnamapemesan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Pemesan"
+                    android:text="..."
                     android:textColor="@color/black"
                     />
 
@@ -109,7 +109,7 @@
                 <TextView
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="ID Paket"
+                    android:text="Paket Sewa"
                     android:textColor="@color/black"
                     />
                 <TextView
@@ -120,10 +120,10 @@
 
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/tvidpaket"
+                    android:id="@+id/tvnamapaket"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID Paket"
+                    android:text="..."
                     android:textColor="@color/black"
                     />
 
@@ -152,7 +152,7 @@
                     android:id="@+id/tvmulaipemesanan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mulai Pemesanan"
+                    android:text="..."
                     android:textColor="@color/black"
                     />
 
@@ -181,7 +181,7 @@
                     android:id="@+id/tvakhirpemesanan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Akhir Pemesanan"
+                    android:text="..."
                     android:textColor="@color/black"
                     />
 
@@ -210,7 +210,7 @@
                     android:id="@+id/tvtotalbiaya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Biaya"
+                    android:text="..."
                     android:textColor="@color/black"
                     />
 
@@ -225,7 +225,7 @@
                 <TextView
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Total Bayar"
+                    android:text="Isi Paket"
                     android:textColor="@color/black"
                     />
                 <TextView
@@ -235,71 +235,14 @@
                     android:text=":"
 
                     android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/tvtotalbayar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Bayar"
-                    android:textColor="@color/black"
-                    />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:text="Kembalian"
-                    android:textColor="@color/black"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text=":"
-
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/tvkembalian"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kembalian"
-                    android:textColor="@color/black"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:text="Status Pembayaran"
-                    android:textColor="@color/black"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text=":"
-
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/tvstatus"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Status Pembayaran"
-                    android:textColor="@color/black"
-                    />
+                    android:orientation="vertical"
+                    android:id="@+id/isi_paket_row_sewa">
+
+                </LinearLayout>
 
             </LinearLayout>
 

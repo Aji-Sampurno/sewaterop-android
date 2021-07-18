@@ -106,11 +106,11 @@ public class BerandaFragment extends Fragment {
                     public void onResponse(JSONArray response) {
                         if (showProgressDialog) pd.cancel();
                         else refreshLayout.setRefreshing(false);
-                        System.out.println("response : " + response.toString());
+                        mItems.clear();
+//                        System.out.println("response : " + response.toString());
                         for(int i = 0 ; i < response.length(); i++)
                         {
                             try {
-                                mItems.clear();
                                 JSONObject data = response.getJSONObject(i);
                                 ModelData md = new ModelData();
                                 md.setIdPesanan(data.getString("id_pesanan"));
@@ -139,4 +139,5 @@ public class BerandaFragment extends Fragment {
 
        queue.add(reqData);
     }
+
 }

@@ -72,9 +72,6 @@ public class AdapterDataRiwayat extends RecyclerView.Adapter<AdapterDataRiwayat.
                     Intent update = new Intent(context, DetailRiwayat.class);
                     update.putExtra("update",1);
                     update.putExtra("idpesanan",md.getIdPesanan());
-                    update.putExtra("tglmulai",md.getTglMulai()+md.getWaktuMulai());
-                    update.putExtra("tglselesai",md.getTglSelesai()+md.getWaktuSelesai());
-                    update.putExtra("statuspembayaran",md.getStatusPembayaran());
 
                     context.startActivity(update);
                 }
